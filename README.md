@@ -1,1 +1,2 @@
 # weather-app
+This is a project in conjunction with the Odin Projects online course curriculum. This project will have me make a weather app that can display a clients current weather in their location utilizing a weather API!
