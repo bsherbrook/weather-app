@@ -5,6 +5,7 @@ const locationInput= document.getElementById('locationInput');
 const contentBody= document.getElementById('content');
 let userLocation='';
 let weatherForecast='';
+let locationDiv= document.getElementById('location');
 
 locationButton.addEventListener('click', ()=>{
     userLocation= locationInput.value;
@@ -27,6 +28,7 @@ async function getWeather() {
 async function processData() {
   const data = await getWeather();
   console.log(data);
+  locationDiv.textContent=`${data.location.name}, ${data.location.region}, ${data.location.country}`;
   contentBody.textContent=`Forecast:${data.current.condition.text} | Temp:${data.current.temp_f}F`
   weatherForecast=data.current.condition.text;
   getGif();

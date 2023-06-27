@@ -1,6 +1,11 @@
-#test{
-    color: red;
-}
-#weatherGif{
-    max-height: 250px;
+body, html{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+
+    #weatherGif{
+        max-height: 250px;
+    }
 }
